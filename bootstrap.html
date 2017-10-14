@@ -29,12 +29,12 @@
                 </div>            
                 <div class="formgroup">
                     <label>Password :</label>
-                    <input type="password" inputmode="numeric" name="password" id="password" class="form-control" minlength="4" required>
+                    <input type="password" inputmode="numeric" name="password" id="password" class="form-control" minlength="4" onchange="ValidatePassword()" required>
                     <small id="passwordhelp" class="form-text text-muted"><span id='message2'></span></small>
                 </div>
                 <div class="formgroup">
                     <label>Confirm password</label>
-                    <input type="password" inputmode="numeric" name="confirm_password" id="confirm_password" class="form-control" minlength="4" onchange="ValidatePassword()" required>
+                    <input type="password" inputmode="numeric" name="confirm_password" id="confirm_password" class="form-control" onchange="ValidatePassword()" required>
                     <small id="confirm_passwordhelp" class="form-text text-muted"><span id='message3'></span></small>                    
                 </div>
                 <br>

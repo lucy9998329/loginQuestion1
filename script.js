@@ -15,12 +15,20 @@ let ValidateUsername = () => {
 }
 //Creating a function for password
 let ValidatePassword = () =>{
-if(password.value.length < 4) {
+if(password.value.length > 4) {
+    return true;
+}
+else {
         message2.innerHTML = "Password must be at least four digits";
-    } if (password.value === confirm_password.value) {
-        message3.innerHTML = "You are ready to go";
+        return false;
+    }
+
+     if (password.value === confirm_password.value ) {
+         return true;
+
     } else {
         message3.innerHTML = "Password doesn't match. Please try again";
+        return false;
     }
     
 }
