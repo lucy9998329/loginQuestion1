@@ -15,6 +15,7 @@ let ValidateUsername = () => {
 //Creating a function for password
 let ValidatePassword = () =>{
 if (password.value === confirm_password.value ) {
+    message2.innerHTML = "Password has been set";
          return true;
     } else {
         message2.innerHTML = "Passwords dont match. Please try again";
